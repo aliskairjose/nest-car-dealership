@@ -1,7 +1,5 @@
-import { Controller, Get, Param, ParseIntPipe, ParseUUIDPipe, UsePipes } from '@nestjs/common';
+import { Controller, Get, Param, ParseUUIDPipe } from '@nestjs/common';
 import { Body, Delete, Patch, Post } from '@nestjs/common/decorators';
-import { ValidationPipe } from '@nestjs/common/pipes';
-import { Car } from 'src/interfaces/car/car.interface';
 import { CarsService } from './cars.service';
 import { CreateCarDto } from './dto/create-car.dto';
 import { UpdateCarDto } from './dto/update-car.dto';
